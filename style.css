@@ -1,0 +1,255 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+#wrap1, #wrap2 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+#wrap-header {
+    width: 100%;
+    height: 10vh;
+}
+
+#wrap-headline {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4BD09;
+}
+
+#wrap-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #E4BD09;
+}
+
+.bg-detail {
+    width: 100%;
+    height: 60vh;
+    background-color: #fff;
+    position: absolute;
+}
+
+#box-detail {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* top: -30vh; */
+    width: 85%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    z-index: 1;
+    color: #000;
+}
+
+#wrap-harga {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #E4BD09;
+}
+
+#wrap-yakin {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrap-ngarah {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------- */
+
+#wrap-isiheadline {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: .5rem;
+}
+
+#wrap-judul {
+    font-size: 4rem;
+    letter-spacing: .5rem;
+}
+
+#wrap-subjudul {
+    font-size: 2rem;
+}
+
+/* ------------------------- */
+
+#wrap-pembuka {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#wrap-pembuka span {
+    line-height: 2rem;
+}
+
+#wrap-fotoproduk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap-fotoproduk img {
+    width: 50vh;
+    height: 50vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#wrap-deskripsi {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap-isidesk {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+/* ------------------------- */
+
+#wrap-fotoharga {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top: 30vh; */
+}
+
+#wrap-listdesk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+#list-desk {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+#list-desk p {
+    margin: 1rem;
+}
+
+/* ------------------------- */
+
+.wrap-boxyakin {
+    display: flex;
+}
+
+.box-yakin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50vh;
+}
+
+.isi-yakin {
+    width: 80%;
+    height: 80%;
+    background-color: #E4BD09;
+}
+
+/* ------------------------- */
+
+#wrap-deskngarah {
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#deskngarah1 {
+    padding: 1rem;
+    background-color: #E4BD09;
+}
+
+.deskngarah {
+    padding: 1rem;
+    color: black;
+}
+
+#gambar-panah img {
+    width: 500px;
+    height: 400px;
+}
+
+#tombol-promo img {
+    margin: 3rem;
+    width: 500px;
+    height: 150px;
+}
+
+/* ------------------------- */
+
+@media only screen and (max-width: 576px) {
+    :root {
+        font-size: 8px;
+    }
+    #wrap-fotoproduk img {
+        width: 50vw;
+        height: 50vw;
+    }
+    #fotoharga img {
+        width: 60vw;
+        height: 60vw;
+    }
+    .wrap-boxyakin {
+        flex-direction: column;
+    }
+    .box-yakin {
+        width: 100%;
+    }
+    #gambar-panah img {
+        width: 60vw;
+        height: 60vw;
+    }
+    #tombol-promo img {
+        width: 60vw;
+        height: 15vw;
+    }
+}
